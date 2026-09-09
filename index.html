@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AstronautiCalc — Support</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1a1a1a; --muted:#666; --bg:#fbfbfb; --card:#fff; --line:#e5e5e5; --accent:#c2410c; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#ededed; --muted:#a0a0a0; --bg:#101012; --card:#18181b; --line:#2a2a2e; --accent:#fb923c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         padding:48px 20px; }
+  main { max-width:640px; margin:0 auto; }
+  h1 { font-size:2rem; margin:0 0 .25rem; letter-spacing:-0.02em; }
+  .tag { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1.15rem; margin:2.5rem 0 .75rem; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.25rem; }
+  li { margin-bottom:.4rem; }
+  a { color:var(--accent); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 24px; margin-bottom:1.25rem; }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AstronautiCalc</h1>
+  <p class="tag">A scientific calculator for people who work with orbits.</p>
+
+  <div class="card">
+    <p style="margin:0"><strong>Need help, found a bug, or want a feature?</strong><br>
+    Open an issue at
+    <a href="https://github.com/sdawson1969/astronauticalc-site/issues">github.com/sdawson1969/astronauticalc-site/issues</a>.</p>
+  </div>
+
+  <h2>What it does</h2>
+  <p>Enter an altitude or radius and AstronautiCalc computes the orbital
+  parameters that follow: period, semi-major axis, circular and escape
+  velocity, revolutions per day, maximum eclipse duration, apparent Earth
+  angular radius and range to horizon.</p>
+  <ul>
+    <li>Ground station visibility — maximum time in view and slant range at 0°, 5°, 10°, 15° and 20° elevation</li>
+    <li>Delta-V — plane change per degree, and the burn to lower perigee for de-orbit</li>
+    <li>A full scientific keypad, with base conversion between decimal, binary, octal and hexadecimal</li>
+    <li>Physical constants one keystroke away</li>
+    <li>Unit conversions, and time conversions between UTC, TAI, GPS, POSIX, Julian Date, MJD, Excel serial and day-of-year</li>
+  </ul>
+
+  <h2>Frequently asked</h2>
+  <p><strong>Does it need an internet connection?</strong><br>
+  No. AstronautiCalc has no networking code at all. Everything is computed on
+  your device.</p>
+  <p><strong>Does it collect any data?</strong><br>
+  No. See the <a href="privacy.html">privacy policy</a>.</p>
+  <p><strong>Is there an iPad version?</strong><br>
+  Not yet. The app runs on iPad in iPhone compatibility mode; a layout that
+  makes proper use of the larger screen may come later.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
